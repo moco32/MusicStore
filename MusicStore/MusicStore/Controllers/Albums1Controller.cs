@@ -14,7 +14,13 @@ namespace MusicStore.Controllers
     {
         private MusicStoreContext db = new MusicStoreContext();
 
+        public ActionResult DisplayByArtist()
+        {
+
+            return View(); 
+        }
         // GET: Albums1
+      //  [Route("Albums/All")]
         public ActionResult Index()
         {
             return View(db.Albums.ToList());
